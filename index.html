@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Events</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Local Events API</h1>
+        <p>Check out the events at <a href="/api/events">/api/events</a></p>
+        <div id="events-container"></div>
+    </div>
+
+    <script>
+        // Fetch events data from the API
+        fetch('/api/events')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('events-container');
+                data.forEach(event => {
+                    const eventElement = document.createElement('div');
+                    eventElement.classList.add('event');
+                    eventElement.innerHTML = `
+                        <h3>${event.name}</h3>
+                        <p><strong>Location:</strong> ${event.location}</p>
+                        <p><strong>Date:</strong> ${event.date}</p>
+                        <p><strong>Time:</strong> ${event.time}</p>
+                        <p>${event.description}</p>
+                    `;
+                    container.appendChild(eventElement);
+                });
+            })
+            .catch(error => console.error('Error fetching events:', error));
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Art Gallery Opening",
+        "location": "Downtown Gallery",
+        "date": "2024-11-10",
+        "time": "18:00",
+        "description": "Join us for the grand opening of the new art gallery featuring local artists."
+    },
+    {
+        "id": 2,
+        "name": "Community Yoga",
+        "location": "Central Park",
+        "date": "2024-11-12",
+        "time": "08:00",
+        "description": "A free morning yoga session to start your day with peace and mindfulness."
+    },
+    {
+        "id": 3,
+        "name": "Food Truck Festival",
+        "location": "City Square",
+        "date": "2024-11-15",
+        "time": "11:00",
+        "description": "Come enjoy a variety of food trucks offering delicious meals from around the world."
+    }
+]

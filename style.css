@@ -1,0 +1,74 @@
+/* Reset some basic styling for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('2.jpeg'); /* Use a professional-looking background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.9); /* Subtle white overlay */
+    max-width: 700px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.event {
+    background-color: rgba(246, 240, 240, 0.618);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(174, 216, 233, 0.717);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(113, 51, 207, 0.2);
+}
+
+.event h3 {
+    color: #34495e;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.event p {
+    font-size: 1rem;
+    color: #555;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2980b9;
+}
